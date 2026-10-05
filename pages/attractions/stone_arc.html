@@ -1,74 +1,232 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stone Arc</title>
-    <link rel="icon" href="../../assets/images/logoliloan.png" type="image/png">
-    <link rel="stylesheet" href="../../assets/css/spots1.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header>
-        <div class="logostone">
-            <img src="../../assets/images/logoliloan.png" alt="Explore Our Spots" class="logo">
-            <h1>STONE ARC</h1>
-        </div>
-        <!-- Menu Button for side navigation -->
-        <input type="checkbox" id="menu-toggle" class="menu-checkbox">
-        <label for="menu-toggle" class="menu-btn">☰ Menu</label>
-
-        <!-- Side menu -->
-        <nav class="side-menu">
-            <label for="menu-toggle" class="close-btn">✖</label>
-            <ul>
-                <li><img src="../../assets/images/logoliloan.png" alt="Explore Our Spots"></li>
-                <li><a href="../../index.html">Home</a></li>
-                <li><a href="attractions.html">Attractions</a></li>
-                <li><a href="../../index.html#about-details">About Us</a></li>
-                <li><a href="../events/events_festivals_page.html">Events and Festivals</a></li>
-                <li><a href="../culture/food_and_culture.html">Food and Culture</a></li>
-                <li><a href="../../index.html#contact">Contacts</a></li>
-            </ul>
-        </nav>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Discover Liloan, Cebu through its coastal landmarks, green hills, local flavors, and community traditions."
+    />
+    <meta name="theme-color" content="#193f36" />
+    <title>Mulao Stone Ark · Visit Liloan</title>
+    <link rel="icon" href="../../assets/images/liloanseal.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../assets/css/site.css" />
+    <script src="../../assets/js/site.js" defer></script>
+  </head>
+  <body id="top">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="brand" href="../../index.html" aria-label="Visit Liloan home"
+        ><span class="brand-mark" aria-hidden="true">✳</span
+        ><span
+          >liloan<span class="brand-dot">.</span
+          ><small>CEBU, PHILIPPINES</small></span
+        ></a
+      ><button
+        class="menu-toggle"
+        aria-expanded="false"
+        aria-controls="site-nav"
+      >
+        Menu <span aria-hidden="true">☰</span>
+      </button>
+      <nav id="site-nav" aria-label="Main navigation">
+        <a href="../../index.html">Discover</a
+        ><a href="attractions.html" aria-current="page">Explore</a
+        ><a href="../culture/food_and_culture.html">Taste</a
+        ><a href="../events/events_festivals_page.html">Celebrate</a
+        ><a class="nav-cta" href="../../index.html#plan"
+          >Plan your visit <span aria-hidden="true">↗</span></a
+        >
+      </nav>
     </header>
-
-    <main>
-        <div class="details">
-            <div class="image">
-                <button class="arrow left-arrow" onclick="prevImage()">&#8249;</button>
-                <div class="image-wrapper">
-                    <img src="../../assets/images/stone1.jpg" alt="Image 1" class="slider-image">
-                    <img src="../../assets/images/stone2.jpg" alt="Image 2" class="slider-image">
-                    <img src="../../assets/images/stone3.jpg" alt="Image 3" class="slider-image">
-                    <img src="../../assets/images/stone4.jpg" alt="Image 4" class="slider-image">
-                    <img src="../../assets/images/stone5.jpg" alt="Image 5" class="slider-image">
-                </div>
-                <button class="arrow right-arrow" onclick="nextImage()">&#8250;</button>
-            </div>
-            <div class="detail">
-                <h2>ABOUT THE PLACE</h2>
-                <p>This unique rock formation is located in Barangay Mulao.
-                    Its name was inspired by the famous Bible Story, Noah’s Arc.
-                    It has two rocks underneath that make it look like an arc standing in its foundation.
-                    This authentic rock formation is one of the remarkable natural resources in Lilo-an.
-                    It suits the adventurers’ leisure pursuit, especially on its way wherein you have
-                    to hop over the stones. The vicinity was surrounded by different sizes of stones,
-                    making it unique. The Municipality of Lilo-an is promoting this site to be one of its
-                    Tourist destinations with prohibitions to those who were not fit to trek to the crest
-                    and had fears of the cliffs. Precautions should be strictly observed on this site.</p>
-                    <h2>VISIT NOW!</h2>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15693.452423010198!2d123.9531716!3d10.4720151!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a9a4c28445b527%3A0x5fd183803d3362ab!2sStone%20Ark!5e0!3m2!1sfil!2sph!4v1732955737663!5m2!1sfil!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    <a href="attractions.html" class="button">BACK</a>
-            </div>
+    <main id="main">
+      <section class="section destination-heading">
+        <a class="breadcrumb" href="attractions.html">← All places</a>
+        <p class="eyebrow">Nature / LILOAN, CEBU</p>
+        <h1>Mulao Stone Ark</h1>
+        <div class="destination-sub">
+          <p>Discover nature’s own sculptural masterpiece.</p>
+          <button
+            class="save-button"
+            data-save="stone_arc"
+            data-title="Mulao Stone Ark"
+            aria-pressed="false"
+          >
+            ＋ Save this place
+          </button>
         </div>
+      </section>
+      <section class="destination-gallery section" aria-label="Photo gallery">
+        <div class="gallery-stage">
+          <img
+            src="../../assets/images/stone1.jpg"
+            alt="Mulao Stone Ark — view 1"
+            fetchpriority="high"
+          /><img
+            src="../../assets/images/stone2.jpg"
+            alt="Mulao Stone Ark — view 2"
+            loading="lazy"
+            hidden
+          /><img
+            src="../../assets/images/stone3.jpg"
+            alt="Mulao Stone Ark — view 3"
+            loading="lazy"
+            hidden
+          /><img
+            src="../../assets/images/stone4.jpg"
+            alt="Mulao Stone Ark — view 4"
+            loading="lazy"
+            hidden
+          /><img
+            src="../../assets/images/stone5.jpg"
+            alt="Mulao Stone Ark — view 5"
+            loading="lazy"
+            hidden
+          />
+          <div class="gallery-controls">
+            <button data-gallery-prev aria-label="Previous photo">←</button
+            ><span class="gallery-count" aria-live="polite">1 / 5</span
+            ><button data-gallery-next aria-label="Next photo">→</button>
+          </div>
+        </div>
+      </section>
+      <section class="section destination-info">
+        <div>
+          <p class="eyebrow">GET TO KNOW THE PLACE</p>
+          <h2>A closer <em>look.</em></h2>
+          <p class="long-copy">
+            This unique rock formation is located in Barangay Mulao. Its name
+            was inspired by the famous Bible Story, Noah’s Arc. It has two rocks
+            underneath that make it look like an arc standing in its foundation.
+            This authentic rock formation is one of the remarkable natural
+            resources in Lilo-an. It suits the adventurers’ leisure pursuit,
+            especially on its way wherein you have to hop over the stones. The
+            vicinity was surrounded by different sizes of stones, making it
+            unique. The Municipality of Lilo-an is promoting this site to be one
+            of its Tourist destinations with prohibitions to those who were not
+            fit to trek to the crest and had fears of the cliffs. Precautions
+            should be strictly observed on this site.
+          </p>
+          <a class="text-link" href="attractions.html"
+            >Keep exploring Liloan ↗</a
+          >
+        </div>
+        <aside class="visit-card">
+          <p class="eyebrow">FIND YOUR WAY HERE</p>
+          <h3>Your next little detour.</h3>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15693.452423010198!2d123.9531716!3d10.4720151!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a9a4c28445b527%3A0x5fd183803d3362ab!2sStone%20Ark!5e0!3m2!1sfil!2sph!4v1732955737663!5m2!1sfil!2sph"
+            title="Map of Mulao Stone Ark"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen
+          ></iframe>
+          <p>
+            Check current access and opening hours with the destination before
+            your visit.
+          </p>
+          <a
+            class="text-link"
+            href="https://www.google.com/maps/search/?api=1&amp;query=Mulao%20Stone%20Ark%20Liloan%20Cebu"
+            target="_blank"
+            rel="noopener"
+            >Open in Google Maps ↗</a
+          >
+        </aside>
+      </section>
+      <section class="section related">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">THERE’S MORE AROUND THE CORNER</p>
+            <h2>Keep <em>wandering.</em></h2>
+          </div>
+        </div>
+        <div class="featured-grid">
+          <a
+            class="place-card"
+            data-category="Heritage"
+            data-name="bagacay point lighthouse"
+            href="bagacay.html"
+            ><div class="card-image">
+              <img
+                src="../../assets/images/bagacay1.jpg"
+                alt="Bagacay Point Lighthouse"
+                loading="lazy"
+              /><span class="image-tag">Heritage</span
+              ><span class="card-arrow" aria-hidden="true">↗</span>
+            </div>
+            <div class="card-copy">
+              <small>LILOAN, CEBU</small>
+              <h3>Bagacay Point Lighthouse</h3>
+              <p>Follow the light. Find a little perspective.</p>
+            </div></a
+          ><a
+            class="place-card"
+            data-category="Nature"
+            data-name="lataban hills"
+            href="hills_lataban.html"
+            ><div class="card-image">
+              <img
+                src="../../assets/images/hills2.jpeg"
+                alt="Lataban Hills"
+                loading="lazy"
+              /><span class="image-tag">Nature</span
+              ><span class="card-arrow" aria-hidden="true">↗</span>
+            </div>
+            <div class="card-copy">
+              <small>LILOAN, CEBU</small>
+              <h3>Lataban Hills</h3>
+              <p>Trade the city noise for wide-open green.</p>
+            </div></a
+          ><a
+            class="place-card"
+            data-category="Adventure"
+            data-name="papa kit’s marina"
+            href="fishing_papakits.html"
+            ><div class="card-image">
+              <img
+                src="../../assets/images/fishing1.jpeg"
+                alt="Papa Kit’s Marina"
+                loading="lazy"
+              /><span class="image-tag">Adventure</span
+              ><span class="card-arrow" aria-hidden="true">↗</span>
+            </div>
+            <div class="card-copy">
+              <small>LILOAN, CEBU</small>
+              <h3>Papa Kit’s Marina</h3>
+              <p>Make a little room for adventure.</p>
+            </div></a
+          >
+        </div>
+      </section>
     </main>
-
-    <footer class="Copyright">
-        <p>&copy; 2024 Explore Our Spots. All rights reserved.</p>
+    <footer class="site-footer">
+      <div class="footer-top">
+        <a class="brand" href="../../index.html"
+          ><span class="brand-mark" aria-hidden="true">✳</span
+          ><span
+            >liloan.<small
+              >COME FOR THE VIEW. STAY FOR THE FEELING.</small
+            ></span
+          ></a
+        >
+        <div>
+          <a href="attractions.html">Explore the town ↗</a
+          ><a href="../../index.html#about-details">Our story ↗</a
+          ><a href="../../index.html#plan">Plan your visit ↗</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Visit Liloan. A local travel guide.</span
+        ><span>Made for the curious. Inspired by Liloan.</span
+        ><a href="#top">Back to top ↑</a>
+      </div>
     </footer>
-    <script src="../../assets/js/javascript.js"></script>
-</body>
+  </body>
 </html>

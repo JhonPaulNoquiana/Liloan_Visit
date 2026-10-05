@@ -1,73 +1,230 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liloan Golf Course</title>
-    <link rel="icon" href="../../assets/images/logoliloan.png" type="image/png">
-    <link rel="stylesheet" href="../../assets/css/spots2.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header>
-        <div class="logogolf">
-            <img src="../../assets/images/logoliloan.png" alt="Explore Our Spots" class="logo">
-            <h1>LILOAN GOLF COURSE</h1>
-        </div>
-        <!-- Menu Button for side navigation -->
-        <input type="checkbox" id="menu-toggle" class="menu-checkbox">
-        <label for="menu-toggle" class="menu-btn">☰ Menu</label>
-
-        <!-- Side menu -->
-        <nav class="side-menu">
-            <label for="menu-toggle" class="close-btn">✖</label>
-            <ul>
-                <li><img src="../../assets/images/logoliloan.png" alt="Explore Our Spots"></li>
-                <li><a href="../../index.html">Home</a></li>
-                <li><a href="attractions.html">Attractions</a></li>
-                <li><a href="../../index.html#about-details">About Us</a></li>
-                <li><a href="../events/events_festivals_page.html">Events and Festivals</a></li>
-                <li><a href="../culture/food_and_culture.html">Food and Culture</a></li>
-                <li><a href="../../index.html#contact">Contacts</a></li>
-            </ul>
-        </nav>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Discover Liloan, Cebu through its coastal landmarks, green hills, local flavors, and community traditions."
+    />
+    <meta name="theme-color" content="#193f36" />
+    <title>Liloan Golf Course · Visit Liloan</title>
+    <link rel="icon" href="../../assets/images/liloanseal.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../assets/css/site.css" />
+    <script src="../../assets/js/site.js" defer></script>
+  </head>
+  <body id="top">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="brand" href="../../index.html" aria-label="Visit Liloan home"
+        ><span class="brand-mark" aria-hidden="true">✳</span
+        ><span
+          >liloan<span class="brand-dot">.</span
+          ><small>CEBU, PHILIPPINES</small></span
+        ></a
+      ><button
+        class="menu-toggle"
+        aria-expanded="false"
+        aria-controls="site-nav"
+      >
+        Menu <span aria-hidden="true">☰</span>
+      </button>
+      <nav id="site-nav" aria-label="Main navigation">
+        <a href="../../index.html">Discover</a
+        ><a href="attractions.html" aria-current="page">Explore</a
+        ><a href="../culture/food_and_culture.html">Taste</a
+        ><a href="../events/events_festivals_page.html">Celebrate</a
+        ><a class="nav-cta" href="../../index.html#plan"
+          >Plan your visit <span aria-hidden="true">↗</span></a
+        >
+      </nav>
     </header>
-
-    <main>
-        <div class="details">
-            <div class="image">
-                <button class="arrow left-arrow" onclick="prevImage()">&#8249;</button>
-                <div class="image-wrapper">
-                    <img src="../../assets/images/golf1.jpg" alt="Image 1" class="slider-image">
-                    <img src="../../assets/images/golf2.jpg" alt="Image 2" class="slider-image">
-                    <img src="../../assets/images/golf3.jpg" alt="Image 3" class="slider-image">
-                    <img src="../../assets/images/golf4.webp" alt="Image 4" class="slider-image">
-                    <img src="../../assets/images/golf5.jpg" alt="Image 5" class="slider-image">
-                </div>
-                <button class="arrow right-arrow" onclick="nextImage()">&#8250;</button>
-            </div>
-            <div class="detail">
-                <h2>ABOUT THE PLACE</h2>
-                <p>Liloan, Cebu, is home to the Liloan Golf and Leisure Estate,
-                    a scenic golf course located within the town's lush and rolling landscapes.
-                    This golf estate offers an 18-hole course designed to provide both a relaxing
-                    and challenging experience for golf enthusiasts. The estate is popular not only
-                    for its well-maintained fairways but also for the beautiful views of the surrounding
-                    countryside. It is a great spot for beginners and seasoned players alike. Additionally,
-                    the facility often includes amenities such as a clubhouse, dining options, and spaces
-                    for events or gatherings.</p>
-                    <h2>VISIT NOW!</h2>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15695.45295228384!2d123.9536968!3d10.4324256!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a9a342c324dfdd%3A0x17bb78f42bf25675!2sLiloan%20Golf%20Course!5e0!3m2!1sfil!2sph!4v1733326702283!5m2!1sfil!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    <a href="attractions.html" class="button">BACK</a>
-            </div>
+    <main id="main">
+      <section class="section destination-heading">
+        <a class="breadcrumb" href="attractions.html">← All places</a>
+        <p class="eyebrow">Adventure / LILOAN, CEBU</p>
+        <h1>Liloan Golf Course</h1>
+        <div class="destination-sub">
+          <p>Unwind among rolling green landscapes.</p>
+          <button
+            class="save-button"
+            data-save="golf_course"
+            data-title="Liloan Golf Course"
+            aria-pressed="false"
+          >
+            ＋ Save this place
+          </button>
         </div>
+      </section>
+      <section class="destination-gallery section" aria-label="Photo gallery">
+        <div class="gallery-stage">
+          <img
+            src="../../assets/images/golf1.jpg"
+            alt="Liloan Golf Course — view 1"
+            fetchpriority="high"
+          /><img
+            src="../../assets/images/golf2.jpg"
+            alt="Liloan Golf Course — view 2"
+            loading="lazy"
+            hidden
+          /><img
+            src="../../assets/images/golf3.jpg"
+            alt="Liloan Golf Course — view 3"
+            loading="lazy"
+            hidden
+          /><img
+            src="../../assets/images/golf4.webp"
+            alt="Liloan Golf Course — view 4"
+            loading="lazy"
+            hidden
+          /><img
+            src="../../assets/images/golf5.jpg"
+            alt="Liloan Golf Course — view 5"
+            loading="lazy"
+            hidden
+          />
+          <div class="gallery-controls">
+            <button data-gallery-prev aria-label="Previous photo">←</button
+            ><span class="gallery-count" aria-live="polite">1 / 5</span
+            ><button data-gallery-next aria-label="Next photo">→</button>
+          </div>
+        </div>
+      </section>
+      <section class="section destination-info">
+        <div>
+          <p class="eyebrow">GET TO KNOW THE PLACE</p>
+          <h2>A closer <em>look.</em></h2>
+          <p class="long-copy">
+            Liloan, Cebu, is home to the Liloan Golf and Leisure Estate, a
+            scenic golf course located within the town&#x27;s lush and rolling
+            landscapes. This golf estate offers an 18-hole course designed to
+            provide both a relaxing and challenging experience for golf
+            enthusiasts. The estate is popular not only for its well-maintained
+            fairways but also for the beautiful views of the surrounding
+            countryside. It is a great spot for beginners and seasoned players
+            alike. Additionally, the facility often includes amenities such as a
+            clubhouse, dining options, and spaces for events or gatherings.
+          </p>
+          <a class="text-link" href="attractions.html"
+            >Keep exploring Liloan ↗</a
+          >
+        </div>
+        <aside class="visit-card">
+          <p class="eyebrow">FIND YOUR WAY HERE</p>
+          <h3>Your next little detour.</h3>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15695.45295228384!2d123.9536968!3d10.4324256!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a9a342c324dfdd%3A0x17bb78f42bf25675!2sLiloan%20Golf%20Course!5e0!3m2!1sfil!2sph!4v1733326702283!5m2!1sfil!2sph"
+            title="Map of Liloan Golf Course"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen
+          ></iframe>
+          <p>
+            Check current access and opening hours with the destination before
+            your visit.
+          </p>
+          <a
+            class="text-link"
+            href="https://www.google.com/maps/search/?api=1&amp;query=Liloan%20Golf%20Course%20Liloan%20Cebu"
+            target="_blank"
+            rel="noopener"
+            >Open in Google Maps ↗</a
+          >
+        </aside>
+      </section>
+      <section class="section related">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">THERE’S MORE AROUND THE CORNER</p>
+            <h2>Keep <em>wandering.</em></h2>
+          </div>
+        </div>
+        <div class="featured-grid">
+          <a
+            class="place-card"
+            data-category="Heritage"
+            data-name="bagacay point lighthouse"
+            href="bagacay.html"
+            ><div class="card-image">
+              <img
+                src="../../assets/images/bagacay1.jpg"
+                alt="Bagacay Point Lighthouse"
+                loading="lazy"
+              /><span class="image-tag">Heritage</span
+              ><span class="card-arrow" aria-hidden="true">↗</span>
+            </div>
+            <div class="card-copy">
+              <small>LILOAN, CEBU</small>
+              <h3>Bagacay Point Lighthouse</h3>
+              <p>Follow the light. Find a little perspective.</p>
+            </div></a
+          ><a
+            class="place-card"
+            data-category="Nature"
+            data-name="lataban hills"
+            href="hills_lataban.html"
+            ><div class="card-image">
+              <img
+                src="../../assets/images/hills2.jpeg"
+                alt="Lataban Hills"
+                loading="lazy"
+              /><span class="image-tag">Nature</span
+              ><span class="card-arrow" aria-hidden="true">↗</span>
+            </div>
+            <div class="card-copy">
+              <small>LILOAN, CEBU</small>
+              <h3>Lataban Hills</h3>
+              <p>Trade the city noise for wide-open green.</p>
+            </div></a
+          ><a
+            class="place-card"
+            data-category="Adventure"
+            data-name="papa kit’s marina"
+            href="fishing_papakits.html"
+            ><div class="card-image">
+              <img
+                src="../../assets/images/fishing1.jpeg"
+                alt="Papa Kit’s Marina"
+                loading="lazy"
+              /><span class="image-tag">Adventure</span
+              ><span class="card-arrow" aria-hidden="true">↗</span>
+            </div>
+            <div class="card-copy">
+              <small>LILOAN, CEBU</small>
+              <h3>Papa Kit’s Marina</h3>
+              <p>Make a little room for adventure.</p>
+            </div></a
+          >
+        </div>
+      </section>
     </main>
-
-    <footer class="Copyright">
-        <p>&copy; 2024 Explore Our Spots. All rights reserved.</p>
+    <footer class="site-footer">
+      <div class="footer-top">
+        <a class="brand" href="../../index.html"
+          ><span class="brand-mark" aria-hidden="true">✳</span
+          ><span
+            >liloan.<small
+              >COME FOR THE VIEW. STAY FOR THE FEELING.</small
+            ></span
+          ></a
+        >
+        <div>
+          <a href="attractions.html">Explore the town ↗</a
+          ><a href="../../index.html#about-details">Our story ↗</a
+          ><a href="../../index.html#plan">Plan your visit ↗</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Visit Liloan. A local travel guide.</span
+        ><span>Made for the curious. Inspired by Liloan.</span
+        ><a href="#top">Back to top ↑</a>
+      </div>
     </footer>
-    <script src="../../assets/js/javascript.js"></script>
-</body>
+  </body>
 </html>

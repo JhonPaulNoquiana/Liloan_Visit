@@ -1,99 +1,169 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Food and Culture</title>
-    <link rel="stylesheet" href="../../assets/css/food-and-culture.css">
-</head>
-<body>
-    <!-- Header -->
-    <header>
-        <div class="logo">
-            <img src="../../assets/images/logoliloan.png" alt="Logo">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="../../index.html">Home</a></li>
-                <li><a href="../../index.html#about-details">About Us</a></li>
-                <li><a href="../attractions/attractions.html">Attractions</a></li>
-                <li><a href="../events/events_festivals_page.html">Events and Festivals</a></li>
-                <li><a href="food_and_culture.html" class="active">Food and Culture</a></li>
-                <li><a href="../../index.html#contact">Contact</a></li>
-            </ul>
-        </nav>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Discover Liloan, Cebu through its coastal landmarks, green hills, local flavors, and community traditions."
+    />
+    <meta name="theme-color" content="#193f36" />
+    <title>Taste Liloan · Visit Liloan</title>
+    <link rel="icon" href="../../assets/images/liloanseal.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../assets/css/site.css" />
+    <script src="../../assets/js/site.js" defer></script>
+  </head>
+  <body id="top">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="brand" href="../../index.html" aria-label="Visit Liloan home"
+        ><span class="brand-mark" aria-hidden="true">✳</span
+        ><span
+          >liloan<span class="brand-dot">.</span
+          ><small>CEBU, PHILIPPINES</small></span
+        ></a
+      ><button
+        class="menu-toggle"
+        aria-expanded="false"
+        aria-controls="site-nav"
+      >
+        Menu <span aria-hidden="true">☰</span>
+      </button>
+      <nav id="site-nav" aria-label="Main navigation">
+        <a href="../../index.html">Discover</a
+        ><a href="../attractions/attractions.html">Explore</a
+        ><a href="food_and_culture.html" aria-current="page">Taste</a
+        ><a href="../events/events_festivals_page.html">Celebrate</a
+        ><a class="nav-cta" href="../../index.html#plan"
+          >Plan your visit <span aria-hidden="true">↗</span></a
+        >
+      </nav>
     </header>
-
-    <!-- Main Section -->
-    <section class="section">
-        <div class="container">
-            <h2>Food and Culture</h2>
-            <p>Don’t miss the chance to try local flavors! Tasting traditional dishes is the best way to explore the culture, history, and heart of any place you visit in Liloan, Cebu.</p>
-            <div class="about-cards">
-                <!-- Masi foods Card -->
-                <div class="card">
-                    <img src="../../assets/images/Masi.jpg" alt="Masi" class="background">
-                    <div class="card-content">
-                        <h3>Masi</h3>
-                        <p>Craving something chewy and sweet? Try Liloan’s masi! These delightful rice treats are filled with rich peanut paste and are easy to find around the town plaza or along the highway.</p>
-                    </div>
-                </div>
-                <!-- Rosquillos Foods Card -->
-                <div class="card">
-                    <img src="../../assets/images/Rosquillos.jpg" alt="Rosquillos" class="background">
-                    <div class="card-content">
-                        <h3>Rosquillos</h3>
-                        <p>First crafted by Margarita 'Titay' T. Frasco in 1907, this Liloan favorite boasts a crunchy shell, sweet aroma, and delightful taste. Enjoy it your way—dip it in a hot drink or twirl it around your fingers! </p>
-                    </div>
-                </div>
-                <!-- Patatas Food Card -->
-                <div class="card">
-                    <img src="../../assets/images/patatas.jpg" alt="CPatatas" class="background">
-                    <div class="card-content">
-                        <h3>Patatas</h3>
-                        <p>Patatas: a nostalgic treat that brings back childhood memories. These crunchy, box-shaped snacks are a perfect alternative to salty chips—crispy, satisfying, and oh-so-familiar!</p>
-                    </div>
-                </div>
-                <!-- Otap Food Card -->
-                <div class="card">
-                    <img src="../../assets/images/otap.jpg" alt="Otap" class="background">
-                    <div class="card-content">
-                        <h3>Otap</h3>
-                        <p>Otap: a sweet, oval-shaped puff pastry dusted with sugar. Its crumbly, delicate texture adds to the joy of every bite—a true treat for sweet lovers!.</p>
-                    </div>
-                </div>
-                <!-- Bibingka Food Card -->
-                <div class="card">
-                    <img src="../../assets/images/Salvaro.jpg" alt="Salvaro" class="background">
-                    <div class="card-content">
-                        <h3>Salvaro</h3>
-                        <p>Salvaro, a thin and crispy coconut snack, is so addictive it often sells out, says vendor Aling Tusing. A true Filipino delicacy you can’t resist!</p>
-                    </div>
-                </div>
-                <!-- Caycay Food Card -->
-                <div class="card">
-                    <img src="../../assets/images/Caycay.jpg" alt="Caycay" class="background">
-                    <div class="card-content">
-                        <h3>Caycay</h3>
-                        <p>"Caycay: a crunchy layered biscuit coated in toasted peanuts. Inspired by Spanish influences, it has evolved into the beloved snack we enjoy today!</p>
-                    </div>
-                </div>
-            </div>
+    <main id="main">
+      <section class="section page-intro">
+        <p class="eyebrow">TASTE LILOAN</p>
+        <h1>A taste of <em>belonging.</em></h1>
+        <p>
+          Small bites. Long traditions. Meet the treats that make a visit to
+          Liloan a little sweeter.
+        </p>
+      </section>
+      <section class="section story-grid">
+        <article class="story-card">
+          <img src="../../assets/images/Masi.jpg" alt="Masi" loading="lazy" />
+          <div>
+            <p class="eyebrow">A LOCAL FAVORITE</p>
+            <h2>Masi</h2>
+            <p>
+              Soft, chewy rice bites with a sweet peanut center. A little taste
+              of everyday Liloan.
+            </p>
+          </div>
+        </article>
+        <article class="story-card">
+          <img
+            src="../../assets/images/Rosquillos.jpg"
+            alt="Rosquillos"
+            loading="lazy"
+          />
+          <div>
+            <p class="eyebrow">A LOCAL FAVORITE</p>
+            <h2>Rosquillos</h2>
+            <p>
+              The delicate, ring-shaped cookies that have become a signature of
+              the town.
+            </p>
+          </div>
+        </article>
+        <article class="story-card">
+          <img src="../../assets/images/otap.jpg" alt="Otap" loading="lazy" />
+          <div>
+            <p class="eyebrow">A LOCAL FAVORITE</p>
+            <h2>Otap</h2>
+            <p>
+              Flaky layers, a light sugar coating, and the perfect excuse for a
+              coffee break.
+            </p>
+          </div>
+        </article>
+        <article class="story-card">
+          <img
+            src="../../assets/images/patatas.jpg"
+            alt="Patatas"
+            loading="lazy"
+          />
+          <div>
+            <p class="eyebrow">A LOCAL FAVORITE</p>
+            <h2>Patatas</h2>
+            <p>
+              Little golden biscuits with a satisfying crunch. Pack a few for
+              the journey.
+            </p>
+          </div>
+        </article>
+        <article class="story-card">
+          <img
+            src="../../assets/images/Salvaro.jpg"
+            alt="Salvaro"
+            loading="lazy"
+          />
+          <div>
+            <p class="eyebrow">A LOCAL FAVORITE</p>
+            <h2>Salvaro</h2>
+            <p>Thin, crisp coconut treats to share with friends back home.</p>
+          </div>
+        </article>
+        <article class="story-card">
+          <img
+            src="../../assets/images/Caycay.jpg"
+            alt="Caycay"
+            loading="lazy"
+          />
+          <div>
+            <p class="eyebrow">A LOCAL FAVORITE</p>
+            <h2>Caycay</h2>
+            <p>
+              Crunchy biscuits finished with toasted peanuts for a sweet, nutty
+              bite.
+            </p>
+          </div>
+        </article>
+      </section>
+      <section class="section end-note">
+        <p class="eyebrow">KEEP THE DISCOVERY GOING</p>
+        <h2>More little moments<br />are <em>waiting.</em></h2>
+        <a class="btn btn-green" href="../attractions/attractions.html"
+          >Explore Liloan ↗</a
+        >
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-top">
+        <a class="brand" href="../../index.html"
+          ><span class="brand-mark" aria-hidden="true">✳</span
+          ><span
+            >liloan.<small
+              >COME FOR THE VIEW. STAY FOR THE FEELING.</small
+            ></span
+          ></a
+        >
+        <div>
+          <a href="../attractions/attractions.html">Explore the town ↗</a
+          ><a href="../../index.html#about-details">Our story ↗</a
+          ><a href="../../index.html#plan">Plan your visit ↗</a>
         </div>
-    </section>
-
-    <!-- Side Menu -->
-    <input type="checkbox" id="menu-toggle" class="menu-checkbox">
-    <label for="menu-toggle" class="menu-icon">☰</label>
-    <div class="side-menu">
-        <ul>
-            <li><a href="../../index.html">Home</a></li>
-            <li><a href="../../index.html#about-details">About Us</a></li>
-            <li><a href="../attractions/attractions.html">Attractions</a></li>
-            <li><a href="../events/events_festivals_page.html">Events and Festivals</a></li>
-            <li><a href="food_and_culture.html" class="active">Food and Culture</a></li>
-            <li><a href="../../index.html#contact">Contact</a></li>
-        </ul>
-    </div>
-</body>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Visit Liloan. A local travel guide.</span
+        ><span>Made for the curious. Inspired by Liloan.</span
+        ><a href="#top">Back to top ↑</a>
+      </div>
+    </footer>
+  </body>
 </html>

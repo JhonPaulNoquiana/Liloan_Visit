@@ -7,13 +7,13 @@ A static tourism website for Liloan, Cebu, built with HTML, CSS, and JavaScript.
 ```text
 index.html                 Main entry point (formerly pre.html)
 pages/
-  landing.html             Original video introduction
+  landing.html             Alternate landing-page route
   attractions/             Attraction listings and destination details
   culture/                 Food and culture page
   events/                  Events and festivals page
 assets/
-  css/                     Page and shared stylesheets
-  js/                      Navigation, animations, and gallery scripts
+  css/site.css             Shared responsive design system
+  js/site.js               Menus, filters, galleries, video, and saved places
   images/                  Photos, logos, and seals
   videos/                  Background video
 scripts/
@@ -28,7 +28,7 @@ From the repository root, run:
 python -m http.server 8000
 ```
 
-Open http://localhost:8000/. The original introduction remains available at
+Open http://localhost:8000/. The same landing experience is also available at
 http://localhost:8000/pages/landing.html.
 
 ## Routing and validation
@@ -44,4 +44,17 @@ python scripts/check_links.py
 ```
 
 For GitHub Pages, serve the repository root so `index.html` is the default page.
-Google Fonts, GSAP, and embedded Google Maps require an internet connection.
+Google Fonts and embedded Google Maps require an internet connection.
+
+## Design and interactions
+
+All 18 pages share `assets/css/site.css` and `assets/js/site.js`. The design uses
+coastal green, warm sand, local photography, and responsive layouts. Edit the
+HTML pages directly; no build step is required.
+
+- The Explore directory filters all destinations by category and name.
+- Destination pages include photo galleries, maps, and a save button.
+- Saved places stay in the visitor?s browser and appear under Plan your visit.
+- The landing-page film loads on demand and pauses when its dialog closes.
+- Navigation, dialogs, and galleries support keyboard use; reduced motion
+  preferences are respected.
