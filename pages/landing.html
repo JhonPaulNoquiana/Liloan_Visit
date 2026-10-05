@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LILOAN VISIT</title>
+    <link rel="icon" href="../assets/images/logoliloan.png" type="image/png">
+    <link rel="stylesheet" href="../assets/css/landing.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+</head>
+    <header>
+
+        <nav class="main-nav">
+            <ul>
+                <!-- Links sa inyo html files -->
+                <li><img src="../assets/images/logoliloan.png" alt="LILO-AN VISIT"></li>
+                <div class="links">
+                <li><a href="../index.html#about-details">ABOUT US</a></li>
+                <li><a href="../index.html#contact">CONTACT</a></li>
+                <li><a href="attractions/attractions.html">ATTRACTIONS</a></li>
+                <li><a href="events/events_festivals_page.html">EVENTS/FESTIVALS</a></li>
+                <li><a href="culture/food_and_culture.html">FOOD/CULTURE</a></li>
+                </div>
+            </ul>
+    </header>
+
+<body>
+        <div class="hero">
+            <!-- Video Background -->
+            <div class="video-background">
+                <video autoplay loop muted playsinline>
+                    <source src="../assets/videos/parola.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <!-- Hero Content -->
+            <div class="hero-content">
+                <h1>Liloan: Where Dreams Begin</h1>
+                <p>Your gateway to unforgettable experiences.</p>
+                <button onclick="handleButtonClick()">Explore More!</button>
+            </div>
+        </div>
+        <main>
+            <div class="section1">
+                <h2>EXPERIENCE THE WONDERS OF LILOAN — WHERE ITS BEAUTY AND CHARM REVEAL THEMSELVES WITH EVERY VIEW.</h2>
+                <div class="image">
+                    <button class="arrow left-arrow" onclick="prevImage()">&#8249;</button>
+                    <div class="image-wrapper">
+                        <img src="../assets/images/municipal.jpg" alt="Image 1" class="slider-image">
+                        <img src="../assets/images/titay1.jpg" alt="Image 2" class="slider-image">
+                        <img src="../assets/images/otap.jpg" alt="Image 3" class="slider-image">
+                        <img src="../assets/images/festival.jpg" alt="Image 4" class="slider-image">
+                        <img src="../assets/images/Masi.jpg" alt="Image 5" class="slider-image">
+                    </div>
+                    <button class="arrow right-arrow" onclick="nextImage()">&#8250;</button>
+                </div>
+            </div>
+
+            <div class="encouragement">
+                <h1>LILOAN IS MORE THAN JUST A DESTINATION — IT'S AN EXPERIENCE OF HERITAGE, CULTURE, AND NATURAL BEAUTY. WHETHER YOU'RE SEEKING ADVENTURE, RELAXATION, OR A TASTE OF HISTORY, LILOAN OFFERS SOMETHING FOR EVERYONE. COME AND DISCOVER THE HEART OF CEBU, WHERE EVERY VISIT CREATES UNFORGETTABLE MEMORIES.</h1>
+            </div>
+
+            <div class="map"></div>
+            <h2>DISCOVER LILOAN'S BEAUTY — LOCATE US ON THE MAP AND SEE WHAT MAKES OUR TOWN UNIQUE.</h2>
+            <div class="aboutliloan">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62786.30268799952!2d123.98800849999998!3d10.4101423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a9bd2cfbb3ced5%3A0xef563dcfa911e2f4!2sBayan%20ng%20Liloan%2C%20Lalawigan%20ng%20Cebu!5e0!3m2!1sfil!2sph!4v1733723963905!5m2!1sfil!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </main>
+        <footer class="Copyright">
+            <p>&copy; 2024 Liloan Visit. All rights reserved.</p>
+        </footer>
+
+
+
+    <script src="../assets/js/landing.js"></script>
+</body>
+</html>

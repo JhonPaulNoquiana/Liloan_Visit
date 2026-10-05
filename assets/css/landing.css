@@ -1,0 +1,329 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(to right, #034078, #001f54);
+    color: #FEFCFB;
+    transition: opacity 1s ease;  /* Smooth transition for fade-out */
+}
+
+/* Header */
+header {
+    position: fixed; /* para naka dikit rajud adtus taas ang navigation */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width sa screen */
+    color: #FEFCFB; /* Text color */
+    padding: 10px 20px; /* Padding sulod the header */
+    z-index: 1000; /* para stay ang header babaw ug functional sad ang mga button sa navi */
+    display: flex; /* para ma allign horizontally */
+    justify-content: center; /* ma center ang content horizontally */
+    align-items:center; /* ma center ang content vertically */
+    flex-wrap: wrap; /* para ma visible, babaw siyas background */
+}
+
+/* elements inside sa header */
+
+.main-nav {
+    text-align: justify;
+}
+.links {
+    padding-top: 30px;
+}
+/* Logo styling */
+img {
+    width: 100px; /* Logo width */
+    height: 80px; /* Logo height */
+}
+
+/* Main navigation menu styling */
+.main-nav ul {
+    list-style: none; /* Remove ang bullets sa list */
+    margin: 0; /* Remove ang default margin */
+    padding: 0; /* Remove ang default padding */
+    display: flex; /* para display ang items horizontally */
+    gap: 500px;
+}
+
+.main-nav li {
+    display: inline-block; /* para ma inline ang mga items */
+}
+
+.main-nav a {
+    text-decoration: none; /* Remove ang underline sa links gi tudlo ni sir sa ako pag present sa ako html file*/
+    color: #FEFCFB; /* color for links */
+    font-size: 1em; /* Font size for links */
+    font-weight: 500; /* Font weight */
+    padding: 5px 10px; /* Add padding to links */
+}
+
+.main-nav a:hover {
+    color: #F59E0B; /* once mo points ang kursor kay mo lain ang color */
+}
+
+
+/* Navbar Animation */
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+    padding: 200px 20px;
+    overflow: hidden;
+    height: 100vh;
+}
+
+/* Video Background */
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.video-background video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+/* Hero Content */
+.hero-content {
+    z-index: 2;
+    position: relative;
+    color: #E5E7EB;
+    animation: fadeInSlideUp 1.5s ease-out;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeInSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero h1 {
+    font-family: 'Marrriweather', serif;
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #F59E0B;
+}
+
+.hero button {
+    padding: 10px 30px;
+    background-color: #F59E0B;
+    color: #0A1128;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.hero button:hover {
+    background-color: #F59E0B;
+}
+
+/* Page Fade-Out Animation */
+.fade-out {
+    animation: fadeOut 1s forwards;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 20px;
+    }
+
+}
+
+main {
+    text-align: center;
+}
+
+.section1 {
+    background-color: #0A1128;
+    width: 100vw;
+    margin: 0;
+    padding-top: 100px;
+}
+
+/* encouragement styling */
+.encouragement {
+    width: 100vw;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0;
+}
+
+.encouragement h1 {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    color: #0A1128;
+    background: linear-gradient(to bottom, #FEFCFB, #1282A2);
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+/* About Liloan Section */
+.aboutliloan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+iframe {
+    width: 100vw;
+    height: 100vh;
+    border: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    padding-top: 100px;
+}
+
+/* Image slider */
+.image {
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-bottom: 50px;
+}
+
+.image-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+    height: 100%;
+}
+
+.slider-image {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+.arrow {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FEFCFB;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}
+
+.arrow:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.map {
+    padding-top: 100px;
+}
+.map h2 {
+    font-family: 'Merriweather', serif;
+
+}
+
+.Copyright {
+    position: fixed; /* Changed from fixed */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #001f54;
+    color: #FEFCFB;
+    text-align: center;
+    font-size: 0.9em;
+}

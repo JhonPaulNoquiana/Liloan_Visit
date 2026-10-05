@@ -1,0 +1,398 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    text-decoration: none;
+
+    /* Unique animated gradient background */
+    background: linear-gradient(120deg, #001f54, #034078);
+    background-size: 400% 400%; /* Allows for smooth animation */
+    animation: gradientAnimation 15s ease infinite;
+
+    /* Text styling */
+    color: #FEFCFB;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Keyframes for animated gradient */
+@keyframes gradientAnimation {
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Ensure smooth scrolling for better UX */
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Header Styling */
+header {
+    display: flex;
+    background: linear-gradient(to right, #034078, #001f54);
+    color: #ffffff;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.logostone{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 420px; /* Space between logo and heading */
+}
+
+.logotitays{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 250px; /* Space between logo and heading */
+}
+
+.logohills{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 370px; /* Space between logo and heading */
+}
+
+.logofishing{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 100px; /* Space between logo and heading */
+}
+
+.logocave{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 250px; /* Space between logo and heading */
+}
+
+.logoapollo{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 380px; /* Space between logo and heading */
+}
+
+.logo {
+    padding-left: 20px;
+    max-height: 80px; /* Limit the logo's height */
+    width: auto;
+}
+
+header h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 10px 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #FEFCFB;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #F59E0B;
+    text-decoration: underline;
+}
+
+/* Main Section Styling */
+/* Main Content */
+main {
+    padding: 20px;
+    text-align: center;
+    padding-bottom: 100px; /* Add extra padding to the bottom */
+}
+
+/* Button Styling */
+.button {
+    display: inline-block; /* Allows for centering */
+    background-color: #F59E0B; /* Button color */
+    color: #FEFCFB; /* Text color */
+    padding: 10px 20px; /* Padding inside the button */
+    font-size: 1.2em; /* Text size */
+    text-decoration: none; /* Remove underline from link */
+    border-radius: 5px; /* Rounded corners */
+    margin-top: 20px; /* Space from the content above */
+    cursor: pointer; /* Change cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for button */
+.button:hover {
+    color: #0A1128;
+}
+
+
+.details {
+    display: flexbox;
+    gap: 20px;
+    padding: 20px;
+    text-align: left;
+}
+
+.details img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.detail p {
+    margin: 0 auto;
+    font-size: 1.5em;
+    color: #FEFCFB;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.detail h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #F59E0B;
+    font-size: 1.5em;
+    margin: 0; /* Remove default margin */
+    text-transform: uppercase;
+}
+
+.detail {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 30px;
+
+}
+.detail iframe {
+    width: 900px;
+    height: 300px;
+}
+.image {
+    display: flex;
+    align-items: center;
+    position: relative;
+    max-width: 375px; /* Adjust as needed */
+    margin: 0 auto;
+    overflow: hidden;
+    padding-bottom: 40px;
+}
+
+.image-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider-image {
+    width: 500px;
+    height: 500px;
+    display: block;
+}
+
+.arrow {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FEFCFB;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}
+
+.arrow:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Footer Styling */
+.Copyright {
+    position: fixed; /* Changed from fixed */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #001f54;
+    color: #FEFCFB;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+/* Styling for the menu button */
+.menu-btn {
+    background: none;
+    border: none;
+    color: #F59E0B;
+    font-size: 1.4em;
+    cursor: pointer;
+    padding: 0 12px;
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    transition: color 0.2s ease;
+}
+
+.menu-btn:hover {
+    color: #FEFCFB;
+}
+
+
+/* Checkbox to Toggle Menu */
+.menu-checkbox {
+    display: none;
+}
+
+.menu-checkbox:checked ~ .side-menu {
+    right: 0; /* Slide menu into view */
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    color: #FEFCFB;
+    font-size: 1.8em;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.close-btn:hover {
+    color: #F59E0B;
+}
+
+/* Side Menu */
+.side-menu {
+    position: fixed;
+    top: 0;
+    right: -350px; /* Initially hidden */
+    width: 300px;
+    height: 100%;
+    background: linear-gradient(to bottom, #034078, #001f54);
+    color: #FEFCFB;
+    display: flex; /* Flexbox for vertical alignment */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    overflow-y: auto; /* Allow scrolling if content overflows */
+    transition: right 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    z-index: 1000;
+}
+
+.side-menu img{
+    width: 60px;
+    height: 60px;
+}
+
+/* Side Menu List */
+.side-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Flexbox for spacing items */
+    flex-direction: column; /* Stack items vertically */
+    width: 100%; /* Ensure the list spans the menu width */
+    text-align: center;
+}
+
+.side-menu li {
+    padding: 20px; /* Reset padding to avoid overlap with gap */
+}
+
+.side-menu a {
+    color: #FEFCFB;
+    text-decoration: none;
+    font-size: 1.2em; /* Adjust font size for better readability */
+    width: 100%; /* Full-width links */
+    display: block; /* Ensure links take up the full width */
+    text-align: center;
+}
+
+.side-menu a:hover {
+    background-color: #0A1128;
+}
+
+@media (max-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: column; /* Stack logo and heading vertically */
+        align-items: center; /* Center-align the content */
+        justify-content: center; /* Vertically center the content */
+        height: 100vh; /* Full viewport height to ensure vertical centering */
+        text-align: center; /* Ensure text is centered */
+    }
+
+    .logo {
+        max-height: 100px; /* Limit the logo's height */
+        width: auto;
+    }
+
+    .logostone, .logotitays, .logohills,
+    .logofishing, .logocave, .logoapollo {
+        display: flex;
+        flex-direction: column; /* Stack vertically */
+        align-items: center;
+        justify-content: center; /* Center logo inside its container */
+        gap: 30px;
+    }
+
+    header h1 {
+        margin-bottom: 50px; /* Remove bottom margin */
+        font-size: 1.8em; /* Adjust the size as needed */
+        color: #FEFCFB; /* Ensure the text color remains consistent */
+    }
+
+
+    .menu-btn {
+        display: block; /* Display menu button on small screens */
+        font-size: 1.5em;
+        color: #F59E0B;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+    .detail iframe {
+        max-width: 100%;
+        height: auto;
+    }
+    .image {
+        display: flex;
+        align-items: center;
+        position: relative;
+        max-width: 300px; /* Adjust as needed */
+        margin: 0 auto;
+        overflow: hidden;
+        padding-bottom: 40px;
+    }
+}
